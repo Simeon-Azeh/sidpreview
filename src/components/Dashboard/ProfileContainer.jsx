@@ -91,7 +91,7 @@ const ProfileContainer = () => {
             )}
           </div>
         </div>
-        <div className="h-30 items-center font-poppins"> {/* Adjust height as needed */}
+        <div className="h-60 lg:h-40 items-center font-poppins"> {/* Adjust height as needed */}
           <Bar data={chartData} options={{ responsive: true, maintainAspectRatio: false }} />
         </div>
         <div className='flex flex-row  items-center justify-between mt-4 '>

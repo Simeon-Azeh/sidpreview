@@ -41,9 +41,9 @@ function Dashboard() {
             </Link>
           </SidebarItem>
           <SidebarItem icon={<RiArchiveDrawerFill size={20} />} text="Resources">
-          <Link to="/resources">
-          <DropdownItem text="All" />
-        </Link>
+            <Link to="/resources">
+              <DropdownItem text="All" />
+            </Link>
             <Link to="/resources/questions">
               <DropdownItem text="Questions" />
             </Link>
@@ -92,8 +92,8 @@ function Dashboard() {
           <Navbar />
         </div>
         <div className='flex flex-col px-4 lg:flex-row p-6'>
-          <div className='w-full lg:w-[70%] px-8'>
-            <div className="flex flex-col lg:flex-row gap-4">
+          <div className='w-full lg:w-[70%] px-2 lg:pl-8'>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               <Card
                 icon={FaBook}
                 bgColor="border-[#9835ff] border bg-white"
@@ -122,15 +122,15 @@ function Dashboard() {
                 BtnBgcolor="text-gray-400"
               />
             </div>
-            <div>
+            <div className="mt-6">
               <ResponsiveTable />
             </div>
           </div>
-          <div className='w-full px-7 mt-5 md:mt-0 md:px-0 md:w-[30%]'>
+          <div className='w-full px-2 mt-5 lg:mt-0 lg:px-0 lg:w-[30%]'>
             <ProfileContainer />
           </div>
         </div>
-        <div className='w-full px-4 md:pl-12 pl-9 pr-9 md:pr-4'>
+        <div className='w-full px-4 lg:pl-12 pl-6 pr-6 lg:pr-4'>
           <CourseList />
         </div>
       </div>
