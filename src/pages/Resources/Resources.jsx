@@ -98,7 +98,7 @@ function Resources() {
         <Navbar />
         </div>
         
-        <div className='w-full mx-auto md:pl-9 '>
+        <div className='w-full mx-auto lg:pl-9 '>
            <ResourceCategories/>
         </div>
       </div>

@@ -4,8 +4,8 @@ import MocktestImg from '../../../public/images/Mocktest.svg';
 import TakeTestButton from './TakeTestButton';
 
 const WelcomeMessage = () => (
-  <div className="bg-white border rounded px-8 py-6 mb-4 flex flex-col md:flex-row justify-center items-center gap-4 font-poppins">
-    <div className='md:w-[30%] w-full'>
+  <div className="bg-white border rounded px-8 py-6 mb-4 flex flex-col lg:flex-row justify-center items-center gap-4 font-poppins">
+    <div className='lg:w-[30%] md:w-[60%] w-full'>
       <img src={MocktestImg} alt="Mocktest" className="w-full object-cover" />
     </div>
     <div>

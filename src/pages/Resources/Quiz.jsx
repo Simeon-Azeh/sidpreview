@@ -197,7 +197,7 @@ function Quiz() {
           <Navbar />
         </div>
 
-        <div className="w-full mx-auto md:pl-16 p-4 px-6">
+        <div className="w-full mx-auto lg:pl-16 p-4 px-6">
           {isInstructionsVisible ? (
             <QuizInstructions onStart={handleStart} />
           ) : (

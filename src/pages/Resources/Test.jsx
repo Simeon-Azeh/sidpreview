@@ -121,14 +121,14 @@ const TestPage = () => (
       <div className="sticky top-0 z-10">
         <Navbar />
       </div>
-      <div className="w-full mx-auto md:pl-16 font-poppins p-4 px-6">
+      <div className="w-full mx-auto lg:pl-16 font-poppins p-4 px-6">
         <div>
         <WelcomeMessage />
         </div>
         <div>
         <PerformanceGraph />
         </div>
-        <div className='flex flex-col md:flex-row gap-4 justify-between'>
+        <div className='flex flex-col lg:flex-row gap-4 justify-between'>
             <div className='w-full md:1/2'>
                 <QuizSummary />
             </div>
