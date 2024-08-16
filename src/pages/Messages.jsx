@@ -197,15 +197,15 @@ const Messages = () => {
         <div className="sticky top-0 z-10">
           <Navbar />
         </div>
-        <div className="w-full mx-auto py-2 md:pl-16 font-poppins md:p-4 px-6">
-          <div className="flex flex-col md:flex-row gap-2 h-screen">
-            <div className={`md:bg-white  p-4 border rounded w-full md:w-1/3 ${selectedChat ? 'hidden md:block' : 'block'}`}>
+        <div className="w-full mx-auto py-2 lg:pl-12 font-poppins lg:p-4 px-6">
+          <div className="flex flex-col lg:flex-row gap-2 h-screen">
+            <div className={`md:bg-white  p-4 border rounded w-full lg:w-1/3 ${selectedChat ? 'hidden md:block' : 'block'}`}>
               <div className="mb-2">
                 <TeamsSection />
               </div>
               <div className="overflow-y-auto">
                 <h1 className="rounded font-medium bg-[#f9f9f9] p-2 text-[#404660]">My Chats</h1>
-                <div className="flex flex-col gap-1 mt-4 md:max-h-96 overflow-y-auto">
+                <div className="flex flex-col gap-1 mt-4 lg:max-h-96 overflow-y-auto">
                   {chatData.map((chat, index) => {
                     const lastMessage = chat.messages[chat.messages.length - 1];
                     return (
@@ -229,14 +229,14 @@ const Messages = () => {
                 <MessagingSection selectedChat={selectedChat} onBack={handleBackClick} />
               ) : (
                 <div className="text-center p-4 flex flex-col justify-between h-full">
-  <div className='w-full mx-auto '>
+  <div className='w-full md:w-[60%] mx-auto '>
     <img src={MessagingImg} alt="" className='w-full object-cover' />
   </div>
   <h2 className="text-xl text-gray-500 ">
     <span className='text-[#9835ff] font-medium'>Simeon,</span> Please select a chat to start messaging.
   </h2>
-  <div className='mt-auto'>
-    <p className='text-gray-500 flex gap-1'>
+  <div className='mt-auto flex justify-center'>
+    <p className='text-gray-500 flex gap-1 items-center'>
       <CiLock size={30}/>Your messages are secured & private, but keep it respectful.
     </p>
   </div>
@@ -244,7 +244,7 @@ const Messages = () => {
 
               )}
             </div>
-            <div className="bg-white p-4 border rounded w-full md:w-1/4 hidden md:block">
+            <div className="bg-white p-4 border rounded w-full md:w-1/4 hidden ">
               <SharedPhotos />
               <SharedFiles />
             </div>
