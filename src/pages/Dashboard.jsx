@@ -91,9 +91,9 @@ function Dashboard() {
         <div className="sticky top-0 z-10">
           <Navbar />
         </div>
-        <div className='flex flex-col px-4 md:flex-row p-6'>
-          <div className='w-full md:w-[70%] px-8'>
-            <div className="flex flex-col md:flex-row gap-4">
+        <div className='flex flex-col px-4 lg:flex-row p-6'>
+          <div className='w-full lg:w-[70%] px-8'>
+            <div className="flex flex-col lg:flex-row gap-4">
               <Card
                 icon={FaBook}
                 bgColor="border-[#9835ff] border bg-white"

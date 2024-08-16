@@ -65,7 +65,7 @@ const Onboarding = () => {
   return (
     <div>
     <div className="min-h-screen flex flex-col items-center justify-center bg-white ">
-      <div className=" p-6 max-w-3xl w-full">
+      <div className=" p-6 md:px-20 lg:px-0 max-w-3xl w-full">
         <div className="flex justify-around mb-6">
           {StepIcons.map((step, index) => (
             <CustomStep

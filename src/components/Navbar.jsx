@@ -39,12 +39,12 @@ function Navbar() {
 
   return (
     <div className="flex bg-white justify-center md:flex-row md:justify-between items-center px-10 sticky top-0 md:px-14 py-4 font-poppins">
-      <h1 className="text-lg hidden md:flex items-center gap-2 font-semibold text-gray-500">
+      <h1 className="text-lg hidden lg:flex items-center gap-2 font-semibold text-gray-500">
       {greeting}, <span className="text-[#9835ff] text-[22px]">Simeon!</span>
       <MdWavingHand className="wave-icon" />
     </h1>
       <div className="flex items-center gap-4 ml-auto">
-        <div className="relative w-[80%] md:w-[300px] ml-6 md:ml-0 ">
+        <div className="relative w-[80%] md:w-[400px] lg:w-[300px] ml-6 md:ml-0 ">
           <input
             type="text"
             placeholder="Find Courses..." className="p-2 pl-8 border rounded-lg text-sm bg-white text-gray-400 outline-none w-full"

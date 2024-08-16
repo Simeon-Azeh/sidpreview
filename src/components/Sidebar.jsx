@@ -29,10 +29,10 @@ function Sidebar({ children }) {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setExpanded(true);  // Keep sidebar open on small screens
+      if (window.innerWidth < 1024) { // iPad breakpoint (1024px)
+        setExpanded(true); // Close sidebar on iPad and smaller screens
       } else {
-        setExpanded(true);  // Keep sidebar open on larger screens
+        setExpanded(true); // Keep sidebar open on larger screens
       }
     };
 
@@ -53,7 +53,7 @@ function Sidebar({ children }) {
         {/* Only show this button on larger screens */}
         <button
           onClick={toggleSidebar}
-          className={`p-1.5 absolute -right-2.5 top-5 rounded-lg bg-gray-50 text-gray-500 hover:bg-gray-100 duration-300 ${window.innerWidth >= 768 ? "block" : "hidden"}`}
+          className={`p-1.5 absolute -right-2.5 top-5 rounded-lg bg-gray-50 text-gray-500 hover:bg-gray-100 duration-300 ${window.innerWidth >= 1024 ? "block" : "hidden"}`}
           style={{ zIndex: 1000 }}
         >
           {expanded ? <LuChevronFirst /> : <LuChevronLast />}
@@ -95,20 +95,24 @@ function Sidebar({ children }) {
   return (
     <>
       {/* Show toggle button on small screens only */}
-      <button className="md:hidden text-[22px]  fixed top-5 bg-white rounded p-1 left-6 text-[#404660] z-20 rounded" onClick={toggleDrawer}>
-        <MenuOutlined size={30} />
-      </button>
+      <button
+  className="lg:hidden text-[22px]  fixed top-5 bg-white  p-1 left-6 text-[#404660] z-20 rounded"
+  onClick={toggleDrawer}
+>
+  <MenuOutlined size={30} />
+</button>
       <Drawer
         title="Menu"
         placement="left"
         onClose={toggleDrawer}
         visible={drawerVisible}
-        className="md:hidden"
+        className="lg:hidden"
+        width={expanded ? 500 : 80}
         bodyStyle={{ padding: 0 }}  // Remove padding to ensure full-height content
       >
         <SidebarContent />
       </Drawer>
-      <aside className={`h-screen ${expanded ? "w-64" : "w-20"} transition-all hidden md:flex`}>
+      <aside className={`h-screen ${expanded ? "w-64" : "w-20"} transition-all hidden lg:flex`}>
         <SidebarContent />
       </aside>
     </>
