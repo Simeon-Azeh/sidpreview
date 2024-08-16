@@ -15,7 +15,7 @@ const UpcomingToday = ({
   const percentageCompleted = (completedChapters / totalChapters) * 100;
 
   return (
-    <div className="bg-white p-4 rounded-lg border font-poppins">
+    <div className="bg-white p-4 w-full  rounded-lg border font-poppins">
       <img 
         src={mainImage} 
         alt="Main" 
@@ -30,7 +30,7 @@ const UpcomingToday = ({
               key={index} 
               src={user.image} 
               alt={`User ${index + 1}`} 
-              className="w-8 h-8 rounded-full border--2 border-white"
+              className="w-8 h-8 rounded-full border-2 border-white"
             />
           ))}
         </div>

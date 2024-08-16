@@ -26,6 +26,7 @@ function Discover() {
       border: `1px solid ${token.colorBorderSecondary}`,
       borderRadius: token.borderRadiusLG,
     };
+  
     const sampleEnrolledUsers = [
         { image: 'https://via.placeholder.com/40' },
         { image: 'https://via.placeholder.com/40' },
@@ -124,8 +125,8 @@ function Discover() {
         <div className="sticky top-0 z-10">
         <Navbar />
         </div>
-        <div className='flex flex-col px-4 md:flex-row p-6'>
-            <div className='w-full md:w-[70%] px-8'>
+        <div className='flex flex-col px-4 lg:px-9 lg:flex-row p-6'>
+            <div className='w-full lg:w-[70%] px-2'>
           <div>
            <GreetingCard />
           </div>
@@ -136,8 +137,8 @@ function Discover() {
             <TabComponent />
          </div>
             </div>
-            <div className='w-full px-7 mt-5 md:mt-0 md:px-0 md:w-[30%]'>
-            <div className='font-poppins mx-auto' style={wrapperStyle}>
+            <div className='w-full px-2 mt-5 md:mt-0 lg:px-0 lg:w-[30%]'>
+            <div className='font-poppins mx-auto md:hidden lg:block' style={wrapperStyle}>
       <Calendar fullscreen={false} onPanelChange={onPanelChange}    />
     </div>
     <div className="mt-5 ">
