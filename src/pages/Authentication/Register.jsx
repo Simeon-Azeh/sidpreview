@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import RegisterImg from '../../../public/images/RegisterImgg.gif';
+import RegisterImg from '/images/RegisterImgg.gif';
 import AmazonLoader from '../../components/Landing/AmazonLoader';
 import { FaEye, FaEyeSlash, FaGoogle, FaFacebook } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
@@ -109,10 +109,10 @@ function Register() {
 
   document.title = " Register with sidec";
   return (
-    <div className="w-full md:w-4/5 mx-auto md:py-8 md:px-0 font-poppins">
-      <div className="flex flex-col md:flex-row items-center bg-white p-8 md:rounded-lg border">
-        <img src={RegisterImg} alt="Register" className="w-full mb-8 md:mb-0 md:w-1/2 h-auto hover:scale-105 duration-300 cursor-pointer" />
-        <div className="md:ml-8 w-full md:w-1/2">
+    <div className="w-full  mx-auto lg:py-8 lg:px-8 md:px-0 font-poppins ">
+      <div className="flex flex-col lg:flex-row items-center bg-white p-8 md:rounded-lg border">
+        <img src={RegisterImg} alt="Register" className="w-full mb-8 md:mb-0  md:w-4/5 lg:w-1/2 h-auto hover:scale-105 duration-300 cursor-pointer" />
+        <div className="lg:ml-8 w-full md:w-4/5 lg:w-1/2">
           <h2 className="text-xl font-semibold mb-1 text-[#404660]">Create your account</h2>
           <p className='text-gray-400 mb-4'>Sign up to get started</p>
           <form onSubmit={handleSubmit}>
@@ -178,20 +178,20 @@ function Register() {
               <p>or</p>
               <div className='w-full h-[1px] bg-gray-300'></div>
             </div>
-            <div className="flex items-center justify-center  mt-6 gap-2 md:gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-center mt-6 gap-4 md:gap-4">
               <button
                 type="button"
-                className="flex items-center gap-2 border py-2 px-2 md:px-4 rounded-md border-gray-400 border-solid hover:translate-y-[-2px] duration-300 font-medium text-[#404660] hover:text-[#9835ff]"
+                className="flex items-center gap-2 border py-2 px-2 md:px-4 rounded-md w-[100%] justify-center border-gray-400 border-solid hover:translate-y-[-2px] duration-300  font-medium text-[#404660] hover:text-[#9835ff]"
               >
-                <FcGoogle size={20} />
-                Google Sign-Up
+                <FcGoogle size={20}/>
+               Register with Google
               </button>
               <button
                 type="button"
-                className="flex items-center gap-2 border py-2 px-2 md:px-4 rounded-md border-gray-400 border-solid hover:translate-y-[-2px] duration-300 font-medium text-[#404660] hover:text-[#9835ff]"
+                className="flex items-center gap-2 border py-2 px-2 md:px-4 rounded-md w-[100%] justify-center border-gray-400 border-solid hover:translate-y-[-2px] duration-300 font-medium text-[#404660] hover:text-[#9835ff]"
               >
                 <FaFacebook className="text-blue-600" size={20} />
-                Facebook Sign-Up
+                Register with Facebook
               </button>
             </div>
           </form>
