@@ -4,7 +4,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import Select from 'react-select';
 import countryList from 'react-select-country-list';
-import avatarImg from '../../../public/images/avatartwo.avif';
+import avatarImg from '/images/avatartwo.avif';
 import { TbCameraPlus } from "react-icons/tb";
 
 const ProfileDetails = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import badgeImage from '../../../public/images/awardone.png'; // Adjust the path as necessary
+import badgeImage from '/images/awardone.png'; // Adjust the path as necessary
 
 function Badges() {
   return (

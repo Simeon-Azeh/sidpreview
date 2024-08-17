@@ -1,5 +1,5 @@
 import React from 'react';
-import awardui from '../../../public/images/awardui.png';
+import awardui from '/images/awardui.png';
 import { FaQuestionCircle, FaCheckCircle, FaShareAlt } from "react-icons/fa";
 import { IoCloseCircle, IoCreate } from "react-icons/io5";
 

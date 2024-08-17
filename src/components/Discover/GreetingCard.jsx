@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiSearch } from 'react-icons/fi';
-import GreetingsImg from '../../../public/images/GreetingsImg.png';
+import GreetingsImg from '/images/GreetingsImg.png';
 
 const GreetingCard = () => {
   const [greeting, setGreeting] = useState('');

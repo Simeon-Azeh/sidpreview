@@ -1,7 +1,7 @@
 import React, { useContext, createContext, useState, useEffect } from "react";
-import Logo from "../../public/images/SidecLogo.png";
-import AlternateLogo from "../../public/images/Asset 6.png";
-import ProfileAvatar from "../../public/images/avatartwo.avif";
+import Logo from "/images/SidecLogo.png";
+import AlternateLogo from "/images/Asset 6.png";
+import ProfileAvatar from "/images/avatartwo.avif";
 import { LuChevronFirst, LuChevronLast } from "react-icons/lu";
 import { IoMdMore } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";

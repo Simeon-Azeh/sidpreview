@@ -1,9 +1,9 @@
 import React from 'react'
-import avatarImg from '../../../public/images/avatartwo.avif'
-import awardone from '../../../public/images/awardone.png'
-import awardtwo from '../../../public/images/awardtwo.png'
-import awardthree from '../../../public/images/awardthree.png'
-import awardfour from '../../../public/images/awardfour.png'
+import avatarImg from '/images/avatartwo.avif'
+import awardone from '/images/awardone.png'
+import awardtwo from '/images/awardtwo.png'
+import awardthree from '/images/awardthree.png'
+import awardfour from '/images/awardfour.png'
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { MdHelp } from "react-icons/md";
 import { FaUsers } from "react-icons/fa";

@@ -1,5 +1,5 @@
 import React from 'react';
-import MocktestImg from '../../../public/images/Support.svg';
+import MocktestImg from '/images/Support.svg';
 import { FaSearch } from 'react-icons/fa';
 
 

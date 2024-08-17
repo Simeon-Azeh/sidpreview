@@ -10,7 +10,7 @@ import ChatCard from '../components/Messages/ChatCard';
 import MessagingSection from '../components/Messages/MessagingSection';
 import SharedPhotos from '../components/Messages/SharedPhotos';
 import SharedFiles from '../components/Messages/SharedFiles';
-import MessagingImg from '../../public/images/Messaging.svg';
+import MessagingImg from '/images/Messaging.svg';
 import { CiLock } from "react-icons/ci";
 
 const chatData = [

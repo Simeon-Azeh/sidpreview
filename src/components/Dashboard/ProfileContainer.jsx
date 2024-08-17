@@ -3,7 +3,7 @@ import { FaEllipsisV } from 'react-icons/fa';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { FaUserEdit } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
-import ProfileImg from '../../../public/images/avatartwo.avif';
+import ProfileImg from '/images/avatartwo.avif';
 import { Bar } from 'react-chartjs-2'; // Ensure you have chart.js and react-chartjs-2 installed
 import 'chart.js/auto'; // Required for chart.js version 3
 

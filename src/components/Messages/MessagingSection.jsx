@@ -3,7 +3,7 @@ import { MdCall, MdMoreVert, MdArrowBack } from 'react-icons/md';
 import { FaPlus, FaSmile, FaEdit, FaTrash } from 'react-icons/fa';
 import { IoMdSend } from 'react-icons/io';
 import TypingEffect from './TypingEffect';
-import avatarone from '../../../public/images/avatartwo.avif';
+import avatarone from '/images/avatartwo.avif';
 
 const MessagingSection = ({ selectedChat, onBack }) => {
   const [showMoreOptions, setShowMoreOptions] = useState(false);

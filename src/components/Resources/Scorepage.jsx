@@ -1,8 +1,8 @@
 import React from 'react';
 import Confetti from 'react-confetti'; // Import Confetti library
 import { Link } from 'react-router-dom';
-import ScoreSuccess from '../../../public/images/ScoreSuccess.svg';
-import NotSuccess from '../../../public/images/NotSuccess.svg';
+import ScoreSuccess from '/images/ScoreSuccess.svg';
+import NotSuccess from '/images/NotSuccess.svg';
 import { FaRegFaceSadTear } from 'react-icons/fa6';
 import { SiDogecoin } from 'react-icons/si';
 import { FaBarsProgress } from 'react-icons/fa6';

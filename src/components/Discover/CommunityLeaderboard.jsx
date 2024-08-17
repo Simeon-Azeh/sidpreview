@@ -59,15 +59,15 @@ const leaderboardData = [
 const CommunityLeaderboard = () => {
   return (
     <div>
-         <div className='flex items-center justify-between '>
-        <h1 className='text-[16px] font-semibold text-[#404660] py-4'>Community Leaderboard</h1>
+         <div className='flex items-center justify-between font-poppins '>
+        <h1 className='text-[16px] font-medium text-[#404660] py-4'>Community Leaderboard</h1>
             <a href="#" className='text-[14px] font-medium text-[#404660] px-4 border  rounded'>Join</a>
         </div>
           <div className=" bg-white  rounded-md overflow-x-auto  border font-poppins pb-4 ">
        
       <table className="w-full ">
         <thead>
-          <tr className='text-gray-400'>
+          <tr className='text-gray-500'>
             <th className="py-2 px-4 font-medium text-[14px] ">Rank</th>
             <th className="py-2 px-4 font-medium text-[14px]">Member</th>
             <th className="py-2 px-4 font-medium text-[14px]">Courses</th>

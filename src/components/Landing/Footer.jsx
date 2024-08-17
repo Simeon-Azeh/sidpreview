@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { RiWhatsappFill } from "react-icons/ri";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
-import Logo from '../../../public/images/SidecLogo.png';
+import Logo from '/images/SidecLogo.png';
 
 function Footer() {
   return (

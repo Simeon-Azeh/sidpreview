@@ -1,6 +1,6 @@
 // src/components/WelcomeMessage.jsx
 import React from 'react';
-import MocktestImg from '../../../public/images/Mocktest.svg';
+import MocktestImg from '/images/Mocktest.svg';
 import TakeTestButton from './TakeTestButton';
 
 const WelcomeMessage = () => (

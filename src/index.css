@@ -14,8 +14,8 @@ body {
 
 /* Webkit Browsers */
 ::-webkit-scrollbar {
-  width: 12px; /* width for vertical scrollbars */
-  height: 12px; /* height for horizontal scrollbars */
+  width: 6px; /* width for vertical scrollbars */
+  height: 6px; /* height for horizontal scrollbars */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -29,7 +29,7 @@ body {
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1; /* Track color */
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-corner {

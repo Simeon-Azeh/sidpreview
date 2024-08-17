@@ -13,8 +13,8 @@ import { CiBookmark } from "react-icons/ci";
 import { MdHelp, MdDashboardCustomize, MdPeople, MdBook, MdSettings, MdOutlineDatasetLinked, MdAccessTime, MdReviews, MdAssignment } from 'react-icons/md';
 import { RiCompassDiscoverFill, RiArchiveDrawerFill } from 'react-icons/ri';
 import { IoMdChatbubbles } from 'react-icons/io';
-import avatarImg1 from '../../../public/images/avatartwo.avif'; // Simeon's avatar
-import avatarImg2 from '../../../public/images/avatarthree.svg';
+import avatarImg1 from '/images/avatartwo.avif'; // Simeon's avatar
+import avatarImg2 from '/images/avatarthree.svg';
 import Navbar from '../../components/Navbar';
 import Sidebar, { SidebarItem, DropdownItem } from '../../components/Sidebar';
 import { Link } from 'react-router-dom';

@@ -1,9 +1,9 @@
 import React from 'react';
 import { DatePicker, message } from 'antd';
 import moment from 'moment';
-import avatarone from '../../../public/images/avatarone.png';
-import avatarTwo from '../../../public/images/avatartwo.avif';
-import avatarThree from '../../../public/images/avatarthree.svg';
+import avatarone from '/images/avatarone.png';
+import avatarTwo from '/images/avatartwo.avif';
+import avatarThree from '/images/avatarthree.svg';
 import { Link } from 'react-router-dom';
 
 const StepContent = ({
