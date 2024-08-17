@@ -50,11 +50,11 @@ function CourseMaterial() {
         <div className="sticky top-0 z-10">
           <Navbar />
         </div>
-        <div className="flex md:px-8 flex-col md:flex-row">
-          <div className="w-full md:w-2/3 ">
+        <div className="flex lg:px-8 flex-col lg:flex-row">
+          <div className="w-full lg:w-2/3 ">
             <CourseContent selectedSubtopic={selectedSubtopic} />
           </div>
-          <div className="w-full md:w-1/3 py-4">
+          <div className="w-full lg:w-1/3 py-4">
             <CourseOverview onSelectTopic={setSelectedSubtopic} />
           </div>
         </div>
