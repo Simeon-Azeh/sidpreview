@@ -52,7 +52,7 @@ function ProfileDetails() {
    
      <div className='flex flex-col justify-start items-start w-full p-4'>
         <h1 className='text-[16px] font-medium text-[#404660] my-4'>Quick Actions</h1>
-        <div className='space-y-4'>
+        <div className=' grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-4'>
             <div className='flex items-center gap-3'>
             <FaChalkboardTeacher size={30} className='text-[#9835ff] bg-slate-50 p-2 w-8 h-8 rounded' />
             <p className=' text-[#404660] text-[16px] font-medium cursor-pointer border px-4 py-1 rounded hover:translate-y-[-3px] duration-300'>Become a Tutor</p>
