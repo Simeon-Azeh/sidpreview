@@ -32,6 +32,7 @@ import Quiz from './pages/Resources/Quiz';
 import CourseMaterial from './pages/Courses/CourseMaterial';
 import ResourceDocs from './pages/Resources/ResourceDocs';
 import Notes from './pages/Courses/Notes';
+import AppointmentBooking from './pages/Tutors/AppointmentBooking';
 
 
 function ScrollToTop() {
@@ -87,6 +88,7 @@ function App() {
        <Route path="/settings" element={<Settings/>} />
        <Route path="/support" element={<Support/>} />
        <Route path="/Notes" element={<Notes/>} />
+       <Route path="/tutor/book" element={<AppointmentBooking/>} />
      </Routes>
      </BrowserRouter>
     </>
