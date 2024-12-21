@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
-import { BrowserRouter ,Routes, Route, useLocation } from 'react-router-dom'
-import Landing from './pages/Landing'
-import Login from './pages/Authentication/Login'
+import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import Landing from './pages/Landing';
+import Login from './pages/Authentication/Login';
 import Register from './pages/Authentication/Register';
 import Onboarding from './pages/Authentication/Onbarding';
 import Dashboard from './pages/Dashboard';
@@ -33,7 +33,7 @@ import CourseMaterial from './pages/Courses/CourseMaterial';
 import ResourceDocs from './pages/Resources/ResourceDocs';
 import Notes from './pages/Courses/Notes';
 import AppointmentBooking from './pages/Tutors/AppointmentBooking';
-
+import ProtectedRoute from './components/ProtectedRoute';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -45,54 +45,262 @@ function ScrollToTop() {
   return null;
 }
 
-
 function App() {
-  
-
   return (
     <>
-     <BrowserRouter>
-     <ScrollToTop />
-     <Routes>
-       <Route path="/" element={<Landing/>} />
-       <Route path="*" element={<Landing/>} />
-       <Route path="/auth/login" element={<Login/>} />
-       <Route path="/auth/register" element={<Register/>} />
-       <Route path="/auth/forgotpassword" element={<ForgotPassword/>} />
-       <Route path="/auth/onboarding" element={<Onboarding/>} />
-       <Route path="/dashboard" element={<Dashboard/>} />
-       <Route path="/discover" element={<Discover/>} />
-       <Route path="/courses" element={<Courses/>} />
-       <Route path="/courses/science" element={<Science/>} />
-       <Route path="/courses/technology" element={<Tech/>} />
-       <Route path="/courses/tech" element={<Tech/>} />
-       <Route path="/courses/arts" element={<Arts/>} />
-       <Route path="/courses/specialization" element={<Specialization/>} />
-       <Route path="/courses/saved" element={<SavedCourses/>} />
-       <Route path="/courses/enrolled" element={<EnrolledCourses/>} />
-       <Route path="/courses/enrollment" element={<CourseEnrollment/>} />
-       <Route path="/courses/enrolled/certificates" element={<Certificates/>} />
-       <Route path="/courses/enrolled/course-material" element={<CourseMaterial/>} />
-       <Route path="/resources" element={<Resources/>} />
-       <Route path="/resources/questions" element={<Questions/>} />
-       <Route path="/resources/solutions" element={<Solutions/>} />
-       <Route path="/resources/tests" element={<TestPage/>} />
-       <Route path='/resources/docs' element={<ResourceDocs/>} />
-       <Route path="/tests/quiz" element={<Quiz/>} />
-       <Route path="/tutors" element={<Tutors/>} />
-       <Route path="/tutors/science" element={<ScienceTutors/>} />
-       <Route path="/tutors/arts" element={<ArtsTutors/>} />
-       <Route path="/tutors/tech" element={<TechTutors/>} />
-       <Route path="/tutors/technology" element={<TechTutors/>} />
-       <Route path="/messages" element={<Messages/>} />
-       <Route path="/settings" element={<Settings/>} />
-       <Route path="/support" element={<Support/>} />
-       <Route path="/Notes" element={<Notes/>} />
-       <Route path="/tutor/book" element={<AppointmentBooking/>} />
-     </Routes>
-     </BrowserRouter>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="*" element={<Landing />} />
+          <Route path="/auth/login" element={<Login />} />
+          <Route path="/auth/register" element={<Register />} />
+          <Route path="/auth/forgotpassword" element={<ForgotPassword />} />
+          
+          <Route
+            path="/auth/onboarding"
+            element={
+              <ProtectedRoute>
+                <Onboarding />
+              </ProtectedRoute>
+            }
+          />
+            <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/discover"
+            element={
+              <ProtectedRoute>
+                <Discover />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses"
+            element={
+              <ProtectedRoute>
+                <Courses />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/science"
+            element={
+              <ProtectedRoute>
+                <Science />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/technology"
+            element={
+              <ProtectedRoute>
+                <Tech />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/tech"
+            element={
+              <ProtectedRoute>
+                <Tech />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/arts"
+            element={
+              <ProtectedRoute>
+                <Arts />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/specialization"
+            element={
+              <ProtectedRoute>
+                <Specialization />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/saved"
+            element={
+              <ProtectedRoute>
+                <SavedCourses />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/enrolled"
+            element={
+              <ProtectedRoute>
+                <EnrolledCourses />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/enrollment"
+            element={
+              <ProtectedRoute>
+                <CourseEnrollment />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/enrolled/certificates"
+            element={
+              <ProtectedRoute>
+                <Certificates />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/courses/enrolled/course-material"
+            element={
+              <ProtectedRoute>
+                <CourseMaterial />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/resources"
+            element={
+              <ProtectedRoute>
+                <Resources />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/resources/questions"
+            element={
+              <ProtectedRoute>
+                <Questions />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/resources/solutions"
+            element={
+              <ProtectedRoute>
+                <Solutions />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/resources/tests"
+            element={
+              <ProtectedRoute>
+                <TestPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/resources/docs"
+            element={
+              <ProtectedRoute>
+                <ResourceDocs />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/tests/quiz"
+            element={
+              <ProtectedRoute>
+                <Quiz />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/tutors"
+            element={
+              <ProtectedRoute>
+                <Tutors />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/tutors/science"
+            element={
+              <ProtectedRoute>
+                <ScienceTutors />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/tutors/arts"
+            element={
+              <ProtectedRoute>
+                <ArtsTutors />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/tutors/tech"
+            element={
+              <ProtectedRoute>
+                <TechTutors />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/tutors/technology"
+            element={
+              <ProtectedRoute>
+                <TechTutors />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/messages"
+            element={
+              <ProtectedRoute>
+                <Messages />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/settings"
+            element={
+              <ProtectedRoute>
+                <Settings />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/support"
+            element={
+              <ProtectedRoute>
+                <Support />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/Notes"
+            element={
+              <ProtectedRoute>
+                <Notes />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/tutor/book"
+            element={
+              <ProtectedRoute>
+                <AppointmentBooking />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
