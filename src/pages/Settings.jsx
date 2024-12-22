@@ -99,14 +99,14 @@ function Settings() {
         <div className="sticky top-0 z-10">
           <Navbar />
         </div>
-        <div className='w-full mx-auto lg:pl-16 font-poppins p-4 px-6'>
-          <div className="flex flex-col lg:flex-row gap-4">
-            <div className="w-full lg:w-2/5 bg-white p-4 border rounded-md">
+        <div className='w-full p-4 px-6 mx-auto lg:pl-14 font-poppins'>
+          <div className="flex flex-col gap-4 lg:flex-row">
+            <div className="w-full p-4 bg-white border rounded-md lg:w-2/5">
               <ProfileDetails />
             </div>
-            <div className="flex-1 bg-white p-4 border rounded-md">
+            <div className="flex-1 p-4 bg-white border rounded-md">
                 <h1 className='text-lg font-medium text-[#404660] mb-4'>Profile Settings</h1>
-              <div className="flex flex-col lg:flex-row mb-4">
+              <div className="flex flex-col mb-4 lg:flex-row">
                 {tabs.map((tab, index) => (
                   <button
                     key={index}

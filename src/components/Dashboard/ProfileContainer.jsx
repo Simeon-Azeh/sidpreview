@@ -19,6 +19,7 @@ const ProfileContainer = () => {
     avatar: '',
     description: '',
     hoursSpent: 0,
+    bio: ''
   });
 
   useEffect(() => {
@@ -33,8 +34,9 @@ const ProfileContainer = () => {
             firstname: data.firstname,
             lastname: data.lastname,
             avatar: data.avatar,
-            description: data.description || 'A brief description about the user.',
+           
             hoursSpent: data.hoursSpent || 0,
+            bio: data.bio || "Sidec's first beta user"
           });
         }
       }
@@ -95,6 +97,7 @@ const ProfileContainer = () => {
         <div className="text-center">
           <h3 className="text-xl font-medium text-[#404660] mt-2">{profileData.firstname} {profileData.lastname}</h3>
           <p className="text-gray-500 text-[14px] mb-2">{profileData.description}</p>
+          <p className="text-gray-500 text-[14px] mb-2">{profileData.bio}</p>
         </div>
       </div>
 
